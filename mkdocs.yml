@@ -1,0 +1,77 @@
+# Website Information
+site_name: MkDocs Material Template
+site_url: https://username.github.io
+site_author: Ihsan TOPALOGLU
+site_description: Documentation project template with MkDocs Material.
+
+# Repository
+repo_url: https://github.com/username/username.github.io
+repo_name: username.github.io
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2020 Ihsan TOPALOGLU
+
+# Theme Configuration
+theme:
+  name: material # Use Material for MkDocs
+  features:
+    - tabs # Render Top-Level Sections as Menu Tabs
+  palette:
+    scheme: preference # Allow Users to Use Both Light and Dark Theme
+
+# Navigation Bar
+nav:
+  - Home:
+    - index.md
+    - diagrams.md
+    - markdown.md
+
+# Social Links
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/username
+      name: Username on GitHub
+
+# Markdown Extensions
+markdown_extensions:
+  # Missing Markdown Elements for MkDocs
+  # https://www.markdownguide.org/tools/mkdocs/
+  - markdown.extensions.footnotes # Footnotes
+  - markdown.extensions.attr_list # Heading IDs and Attribute List
+  - markdown.extensions.def_list # Definition Lists
+  - pymdownx.tilde # Strikethrough
+  - pymdownx.tasklist: # Task Lists
+      custom_checkbox: true # Custom Checkmarks
+  - pymdownx.magiclink # Automatic URL Linking
+  # 
+  # Python-Markdown Extensions
+  # --------------------------
+  - markdown.extensions.admonition # Call-Outs
+  - markdown.extensions.toc: # Table of Contents (Right Sidebar)
+      toc_depth: 4 # TOC Depth Level
+      permalink: true # Links on Headers
+  # 
+  # PyMdown Extensions
+  # ------------------
+  - pymdownx.details # Collapsible Elements
+  - pymdownx.highlight: # Syntax Highlighting Options
+      use_pygments: true # Material Requires Pygments
+      linenums: true # Code Line Numbers
+  - pymdownx.superfences # Nested Fences, Tabbed Fences, and Custom
+  - pymdownx.tabbed # Tabbed Views
+  - pymdownx.emoji: # Icons + Emojis
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # 
+  # Additional Extensions
+  # ---------------------
+  - plantuml_markdown: # PlantUML Diagrams
+      server: http://www.plantuml.com/plantuml
+
+# MkDocs Plugins
+plugins:
+  - search # Search Capability
+  - git-revision-date-localized: # Last Update Footer
+      type: timeago

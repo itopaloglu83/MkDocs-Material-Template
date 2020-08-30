@@ -1,0 +1,8 @@
+# MkDocs Material Theme
+mkdocs-material
+
+# Add PlantUML Diagrams
+plantuml-markdown
+
+# Localized Last Updated Footer
+mkdocs-git-revision-date-localized-plugin
