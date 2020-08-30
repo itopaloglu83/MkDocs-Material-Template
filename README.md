@@ -1,4 +1,4 @@
-# MkDocs Material Template
+# Documentation with MkDocs
 
 Documentation project template with MkDocs Material.
 
